@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+
+
+	<!-- 연결 확인 views / common / jsp 파일 확인 혹은 새로 생성 -->
+	<!-- 기본 레이아웃 CSS -->
+	<definition name="baseLayout"
+		template="/WEB-INF/views/common/layout.jsp">
+		<put-attribute name="title" value="레이아웃 페이지" />
+		<put-attribute name="header" value="/WEB-INF/views/common/header.jsp" />
+		<put-attribute name="side" value="/WEB-INF/views/common/side.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp" />
+		<put-attribute name="quickMenu" value="/WEB-INF/views/common/quickMenu.jsp" />
+		
+		
+		
+	</definition>
+	
+	
+	
+	
+		<!-- 로그인/회원가입 화면 레이아웃 CSS -->
+		<definition name="MemberInLayout"
+		template="/WEB-INF/views/common/MemberInLayout.jsp">
+		<put-attribute name="title" value="로그인" />
+		<put-attribute name="header" value="/WEB-INF/views/common/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp" />
+		
+		
+		
+		
+	</definition>
+	
+	
+	
+			<!-- 고객센터 CSS -->
+		<definition name="cusCenterLayout"
+		template="/WEB-INF/views/common/cusCenterLayout.jsp">
+		<put-attribute name="title" value="고객센터" />
+		<put-attribute name="header" value="/WEB-INF/views/common/cus_header.jsp" />
+		<put-attribute name="body" value="" />
+		
+		
+		
+		
+		
+	</definition>
+	
+
+
+
+
+	<definition name="/main/main" extends="baseLayout">
+		<put-attribute name="title" value="쇼핑몰 메인페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/main/main.jsp" />
+	</definition>
+
+	<definition name="/main/itinternet" extends="baseLayout">
+		<put-attribute name="title" value="IT/인터넷 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/main/itinternet.jsp" />
+	</definition>
+	<definition name="/main/economy" extends="baseLayout">
+		<put-attribute name="title" value="경제/경영 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/main/economy.jsp" />
+	</definition>
+	<definition name="/main/univ" extends="baseLayout">
+		<put-attribute name="title" value="대학교재 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/main/univ.jsp" />
+	</definition>
+	<definition name="/main/improvement" extends="baseLayout">
+		<put-attribute name="title" value="자기계발 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/main/improvement.jsp" />
+	</definition>
+	<definition name="/main/science" extends="baseLayout">
+		<put-attribute name="title" value="자연과학/공학 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/main/science.jsp" />
+	</definition>
+	<definition name="/main/history" extends="baseLayout">
+		<put-attribute name="title" value="역사/인문학 페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/main/history.jsp" />
+	</definition>
+</tiles-definitions>
+
+
